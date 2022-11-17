@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src = "socket.io.js"></script>
+</head>
+<body>
+    <div style="display: flex; flex-direction: row;" id = "container">
+        <div id="game-container">
+            <div id="canvasesContainer">
+              
+              <canvas  id="canvas" width="600" height="600">
+                
+              </canvas>
+              
+                <div id="popupWon">
+                    <p id="popupWonTitle">
+                        
+                    </p>
+                    <p id="popupWonText">
+                        
+                    </p>
+                    <p id="popupWonCountdown">
+                        Game starting in <span id="popupWonCountdownSeconds">10</span>
+                    </p>
+                </div>
+            </div>
+          <!--do not delete named from here-->
+            <p id =  "supersecretmessage">Psst... DM qa#1337, IMPixel#3007 on discord for suggestions, bugs, and improvements</p>
+          <!--don't remove my name form here-->
+        </div>
+        <div id="message-container">
+            <div id="changeUsername">
+                <input type="text" placeholder="set username no bad words" id="editUsernameInput" autocomplete="off">
+                <button class="editUsernameButton" id="editUsernameButton">
+                    <img src="editIcon.svg" id="editUsernameIcon">
+                </button>
+            </div>
+            <div id="messages">
+                
+            </div>
+            <div id="messageUiContainer">
+                <input class="messagesender" type="text" placeholder="Say something, but dont swear." id = "text" autocomplete="off">
+                <button id="send">
+                    <img src="sendIcon.svg">
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="popupOverlay">
+        <div id="popup">
+            <div id="popupTitle">
+                <span class="special"></span>
+            </div>
+            <div id="popupParagraph">
+            </div>
+            <div id="popupButtonsContainer">
+    
+            </div>
+        </div>
+    </div>
+</body>
+<script src = "script.js"></script>
+</html>
+</body>
+</html>
